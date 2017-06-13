@@ -1,0 +1,115 @@
+/* For reference */
+/* Type Selectors = elementname*/
+/* Class Selectors = .classname*/
+/* ID Selectors = #idname*/
+/* Universal Selectors = * ns|* *|* */
+/* Attribute selectors [attr=value] */
+
+/* Art Deco font and instructions for usage with HTML and CSS found here: */
+/* https://developers.google.com/fonts/docs/getting_started */
+/* https://fonts.google.com/specimen/Poiret+One?utm_source=bypeople&selection.family=Poiret+One */
+
+/* CLASS SELECTORS */
+
+/* Font */
+.font {
+   font-family: 'Poiret One', cursive; 
+  /* This is not a websafe font and is only usable with the */
+  /* @import url('https://fonts.googleapis.com/css?family=Poiret+One'); under the HTML <style> tag */
+  color: lavender;
+}
+/* Title */
+.title {
+  position: absolute;
+  top: 20px;
+  left: 150px;
+  text-shadow: 3px 3px 3px #222;
+  font-size: 48px;
+  letter-spacing: 5px;
+  margin: 15px;
+}
+/* Headers */
+.heading {
+  font-size: 40px;
+  max-width: 80%;
+  text-align: left;
+  padding-top: 20px;
+  margin-left: 20px;
+}
+/* Transparency */
+.alpha {
+  background: #1b1d68;
+  filter: alpha(opacity=70);/* Setting the opacity of the box to 70% */
+  /* For IE compatibility */
+  -moz-opacity: 0.7;/* Setting the opacity of the box to 70% */
+  /* For  Mozilla compatability */
+  opacity: 0.7;/* Setting the opacity of the box to 70% */
+  /* CSS3 Compatibility */
+  box-shadow: 4px 4px #3d3e4f;
+}
+/* Remove Tranparency */
+.noalpha {
+  filter: alpha(opacity=100); /* Returning the opacity to normal due to the #container settings */
+  /* For IE compatibility */
+  -moz-opacity: .9; /* Returning the opacity to normal due to the #container settings */
+  /* For  Mozilla compatability */
+  opacity: .9; /* Returning the opacity to normal due to the #container settings */
+  /* CSS3 Compatibility */
+}
+
+/* ELEMENT SELECTORS */
+
+/* Establish background image positioning and compatibility */
+body {
+  background: url("../images/beyond-the-sea.jpg") no-repeat center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* Customizations researched at: w3schools.com/css/css_table.asp */
+/* Establish table options for TABLE, TABLE HEADING, TABLE DATA */
+table {
+    border-collapse: collapse;
+    width: 98%; /* Keeps the table from going beyond the #container width */
+    margin-left: 25px; /* This moves the table in from the #container */
+    margin-top: 10px; /* Moves the table down from the top area to avoid overlap */
+}
+
+th {
+    padding: 8px;
+    text-align: left;
+    font-size: 26px;
+    border-bottom: 1px solid #bbb;
+} 
+
+td {
+    padding: 8px;
+    text-align: left;
+    font-size: 16px;
+    border-bottom: 1px solid #bbb;
+}
+
+
+/* ID SELECTORS */
+
+/* Original source: */
+/* https://css-tricks.com/almanac/properties/o/opacity/ */
+
+#logo {
+  position: absolute;
+  width: 135px;
+  height: 135px;
+  margin: 15px;
+}
+
+#bot {
+  position: absolute;
+  right: 12%;
+  width: 130px;
+  height: 130px;
+  margin-top: 20px;
+}
+
+/*  */
